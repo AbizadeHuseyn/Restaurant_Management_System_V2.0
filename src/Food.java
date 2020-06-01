@@ -3,7 +3,7 @@ public class Food {
     private String name;
 
 
-    public Food ( String name, float price){
+    public Food(String name, float price) {
         this.price = price;
         this.name = name;
 

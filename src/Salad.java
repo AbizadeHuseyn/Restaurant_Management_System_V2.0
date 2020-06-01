@@ -1,7 +1,8 @@
 public class Salad extends Food {
     private String category;
-    public Salad (String name, float price){
-        super(name,price);
+
+    public Salad(String name, float price) {
+        super(name, price);
         this.category = "Drink";
 
     }

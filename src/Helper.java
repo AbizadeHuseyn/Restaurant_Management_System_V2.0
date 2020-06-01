@@ -102,8 +102,7 @@ public class Helper implements Functions {
                 if (categoryNumber <= 0 || categoryNumber > categories.size()) {
                     System.out.println("Please choose category in range");
                     categoryNumber = takeAnIntegerInput();
-                }
-                else  condition3 = true;
+                } else condition3 = true;
             }
             List<Food> category = categories.get(categoryNumber - 1);
             for (int i = 0; i < category.size(); i++) {
@@ -127,7 +126,7 @@ public class Helper implements Functions {
             System.out.println("Your total Bill is " + totalBill);
             System.out.print("Do you want to add new foo to your order? ");
             String choice = takeAnStringInput();
-            if (choice.equals("Yes"))  continue;
+            if (choice.equals("Yes")) continue;
             else {
                 System.out.println("Your total bill is " + totalBill + "$");
                 tables[num].setBill(totalBill);
@@ -139,7 +138,7 @@ public class Helper implements Functions {
     }
 
     public void deleteOrder(int number) {
-        totalProfit = (totalProfit + tables[number].getBill())/2;
+        totalProfit = (totalProfit + tables[number].getBill()) / 2;
         tables[number].setStatus("Empty");
 
     }

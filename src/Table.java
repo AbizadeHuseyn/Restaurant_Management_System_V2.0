@@ -1,8 +1,8 @@
 public class Table {
 
-    private float bill ;
-    private String status ;
-    private String meals ;
+    private float bill;
+    private String status;
+    private String meals;
     private int number;
 
     public Table(int number) {
@@ -13,8 +13,7 @@ public class Table {
     }
 
 
-
-    public void deleteOrder(Table table){
+    public void deleteOrder(Table table) {
         setBill(0);
         setMeals("");
         setStatus("Empty");
